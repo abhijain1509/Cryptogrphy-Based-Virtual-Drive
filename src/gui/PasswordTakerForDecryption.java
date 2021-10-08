@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Arlene
+ * @author Abhishek
  */
 
 public class PasswordTakerForDecryption extends javax.swing.JFrame
@@ -75,74 +75,66 @@ public class PasswordTakerForDecryption extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
-        suggestionLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         passwordField = new javax.swing.JPasswordField();
         proceedButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        suggestionLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(700, 200));
+        setMinimumSize(new java.awt.Dimension(700, 200));
+        getContentPane().setLayout(null);
 
-        suggestionLabel.setFont(new java.awt.Font("Source Code Pro Semibold", 1, 15)); // NOI18N
-        suggestionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        suggestionLabel.setText("Enter the password used to encrypt all the selected encrypted files");
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Enter the password:");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 50, 160, 17);
 
         passwordField.setToolTipText("");
-        passwordField.addKeyListener(new java.awt.event.KeyAdapter()
-        {
-            public void keyReleased(java.awt.event.KeyEvent evt)
-            {
+        passwordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordFieldActionPerformed(evt);
+            }
+        });
+        passwordField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
                 passwordFieldKeyReleased(evt);
             }
         });
+        getContentPane().add(passwordField);
+        passwordField.setBounds(10, 70, 320, 28);
 
-        proceedButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        proceedButton.setBackground(new java.awt.Color(0, 0, 0));
+        proceedButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        proceedButton.setForeground(new java.awt.Color(255, 255, 255));
         proceedButton.setText("Proceed");
         proceedButton.setEnabled(false);
-        proceedButton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        proceedButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 proceedButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(proceedButton);
+        proceedButton.setBounds(40, 120, 100, 28);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(passwordField, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(suggestionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 857, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(proceedButton)
-                .addGap(398, 398, 398))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(suggestionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(proceedButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("ENTER THE PASSWORD TO DECRYPT YOUR FILE");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(20, 10, 370, 19);
+
+        suggestionLabel.setFont(new java.awt.Font("Source Code Pro Semibold", 1, 15)); // NOI18N
+        suggestionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        suggestionLabel.setIcon(new javax.swing.ImageIcon("D:\\Abhishek\\Pictures\\REGISTRATION2.jpg")); // NOI18N
+        suggestionLabel.setText("j");
+        getContentPane().add(suggestionLabel);
+        suggestionLabel.setBounds(0, 0, 870, 180);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -169,6 +161,10 @@ public class PasswordTakerForDecryption extends javax.swing.JFrame
         
     }//GEN-LAST:event_proceedButtonActionPerformed
 
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordFieldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -176,6 +172,7 @@ public class PasswordTakerForDecryption extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JButton proceedButton;
     private javax.swing.JLabel suggestionLabel;

@@ -30,7 +30,7 @@
                   <Component id="jScrollPane1" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="addMoreFilesButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="80" max="32767" attributes="0"/>
+                      <EmptySpace pref="72" max="32767" attributes="0"/>
                       <Component id="encryptOrDecryptButton" min="-2" pref="175" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                       <Component id="reSelectFilesButton" min="-2" max="-2" attributes="0"/>
@@ -86,7 +86,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="reSelectFilesButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Forget This List &amp; Re-Select Files"/>
+        <Property name="text" type="java.lang.String" value="RESET AND AGAIN SELECT FILES"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reSelectFilesButtonActionPerformed"/>

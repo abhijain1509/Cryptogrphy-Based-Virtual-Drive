@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Arlene
+ * @author Abhishek
  */
 public class ToBeEncryptedOrDecrypted extends javax.swing.JFrame
 {
@@ -104,8 +104,7 @@ public class ToBeEncryptedOrDecrypted extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         heading = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -123,29 +122,23 @@ public class ToBeEncryptedOrDecrypted extends javax.swing.JFrame
         listOfFilesAndFoldersTextField.setRows(5);
         jScrollPane1.setViewportView(listOfFilesAndFoldersTextField);
 
-        reSelectFilesButton.setText("Forget This List & Re-Select Files");
-        reSelectFilesButton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        reSelectFilesButton.setText("RESET AND AGAIN SELECT FILES");
+        reSelectFilesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reSelectFilesButtonActionPerformed(evt);
             }
         });
 
         addMoreFilesButton.setText("Add More Files To Existing");
-        addMoreFilesButton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        addMoreFilesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addMoreFilesButtonActionPerformed(evt);
             }
         });
 
         encryptOrDecryptButton.setFont(new java.awt.Font("AR JULIAN", 1, 24)); // NOI18N
-        encryptOrDecryptButton.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        encryptOrDecryptButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 encryptOrDecryptButtonActionPerformed(evt);
             }
         });
@@ -161,7 +154,7 @@ public class ToBeEncryptedOrDecrypted extends javax.swing.JFrame
                     .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(addMoreFilesButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                         .addComponent(encryptOrDecryptButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(92, 92, 92)
                         .addComponent(reSelectFilesButton)))

@@ -21,7 +21,7 @@ import javax.swing.JTextArea;
 
 /**
  *
- * @author Arlene
+ * @author Abhishek
  */
 public class FileEncryptorAndDecryptor
 {
